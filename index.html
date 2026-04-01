@@ -2,7 +2,14 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    name="description"
+    content="LUNARIAは、上品で大人可愛い韓国ネイルを提案する完全予約制プライベートサロンです。"
+  >
   <title>LUNARIA | 韓国ネイルサロン</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -10,560 +17,596 @@
 
 <body>
 
-<!-- header -->
-<header class="site-header">
-  <div class="container site-header__inner">
-
-    <a href="index.html" class="site-logo">
-      ☾ LUNARIA
-    </a>
-
-    <nav class="site-nav" aria-label="グローバルナビゲーション">
-
-      <a href="#" class="header__insta" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1.8">
-          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-          <circle cx="12" cy="12" r="4"></circle>
-          <circle cx="17" cy="7" r="1.5"></circle>
-        </svg>
+  <!-- header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-logo">
+        ☾ LUNARIA
       </a>
 
-      <a href="#" class="header__reserve">
-        LINE予約
-      </a>
+      <div class="site-header__actions">
+        <a
+          href="https://www.instagram.com/"
+          class="header__insta"
+          aria-label="Instagram"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17" cy="7" r="1.5"></circle>
+          </svg>
+        </a>
 
-      <button class="header__menu" aria-label="Menu" aria-expanded="false" aria-controls="headerDrawer">
-        <span></span>
-        <span></span>
-        <span></span>
+        <a href="#cta" class="header__reserve">
+          LINE予約
+        </a>
+
+        <button
+          type="button"
+          class="header__menu"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="headerDrawer"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-drawer" id="headerDrawer" aria-hidden="true">
+      <nav class="header-drawer__nav" aria-label="メニュー">
+        <a href="index.html">Top</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#price">Price</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#cta">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img
+          src="images/hero-nail.jpg"
+          alt="LUNARIAの韓国ネイル"
+          class="hero__bg-image"
+        >
+      </div>
+
+      <div class="container hero__overlay">
+        <p class="hero__brand">☾ LUNARIA</p>
+
+        <h1 class="hero__title">
+          ちゅるん、<br><span>ときめく</span>指先。
+        </h1>
+
+        <p class="hero__text">
+          韓国ネイル × 大人可愛い<br>
+          上品に、私らしく。<br>
+          完全予約制プライベートサロン
+        </p>
+
+        <a href="#cta" class="btn hero__btn">
+          LINEで予約する
+        </a>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery section section-divider">
+      <div class="container">
+        <div class="section-head center fade-up">
+          <span class="section-label">Trend Design</span>
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-text">
+            透明感とときめきをまとった、LUNARIAの人気デザイン。
+          </p>
+        </div>
+
+        <div class="gallery__layout">
+          <article class="gallery-card gallery-card--feature card fade-up delay-1">
+            <a href="images/gallery-01.jpg" class="gallery-card__link">
+              <img
+                src="images/gallery-01.jpg"
+                alt="ちゅるんピンクの韓国ネイル"
+                class="gallery-card__image"
+              >
+              <div class="gallery-card__body">
+                <p class="gallery-card__eyebrow">Featured</p>
+                <h3 class="gallery-card__title">Rosy Melt</h3>
+                <p class="gallery-card__text">
+                  透明感を引き出す王道ちゅるんピンク。<br>
+                  迷ったらこれ。
+                </p>
+                <p class="gallery-card__price">¥5,500〜</p>
+              </div>
+            </a>
+          </article>
+
+          <div class="gallery__side">
+            <article class="gallery-card card fade-up delay-2">
+              <a
+                href="images/gallery-02.jpg"
+                class="gallery-card__link gallery-card__link--row"
+              >
+                <img
+                  src="images/gallery-02.jpg"
+                  alt="ミラーとハートの韓国ネイル"
+                  class="gallery-card__thumb"
+                >
+                <div class="gallery-card__body">
+                  <p class="gallery-card__eyebrow">Trend</p>
+                  <h3 class="gallery-card__title">Moon Mirror Heart</h3>
+                  <p class="gallery-card__text">
+                    ミラーの輝きとハートで魅せる韓国トレンドネイル。<br>今っぽさを一気に引き上げるデザイン。
+                  </p>
+                  <p class="gallery-card__price">¥5,500〜</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="gallery-card card fade-up delay-3">
+              <a
+                href="images/gallery-03.jpg"
+                class="gallery-card__link gallery-card__link--row gallery-card__link--reverse"
+              >
+                <img
+                  src="images/gallery-03.jpg"
+                  alt="じゅわっと血色感のちゅるんネイル"
+                  class="gallery-card__thumb"
+                >
+                <div class="gallery-card__body">
+                  <p class="gallery-card__eyebrow">Popular</p>
+                  <h3 class="gallery-card__title">Blush Syrup</h3>
+                  <p class="gallery-card__text">
+                    じゅわっと血色感。<br>
+                    ナチュラルなのにちゃんと可愛い、大人のための定番。
+                  </p>
+                  <p class="gallery-card__price">¥5,500〜</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="gallery-card card fade-up delay-4">
+              <a
+                href="images/gallery-04.jpg"
+                class="gallery-card__link gallery-card__link--row"
+              >
+                <img
+                  src="images/gallery-04.jpg"
+                  alt="透け感グラデーションの韓国ネイル"
+                  class="gallery-card__thumb"
+                >
+                <div class="gallery-card__body">
+                  <p class="gallery-card__eyebrow">Trend</p>
+                  <h3 class="gallery-card__title">Starry Drop</h3>
+                  <p class="gallery-card__text">
+                    透け感とグラデーションで魅せる韓国ネイル。<br>指先をすらっと美しく見せるデザイン。
+                  </p>
+                  <p class="gallery-card__price">¥6,500〜</p>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="gallery__bottom">
+            <article class="gallery-mini card fade-up delay-5">
+              <a href="images/gallery-05.jpg" class="gallery-mini__link">
+                <img
+                  src="images/gallery-05.jpg"
+                  alt="シンプルな韓国ネイル:Crystal Bloom"
+                  class="gallery-mini__image"
+                >
+              </a>
+            </article>
+
+            <article class="gallery-mini card fade-up delay-6">
+              <a href="images/gallery-06.jpg" class="gallery-mini__link">
+                <img
+                  src="images/gallery-06.jpg"
+                  alt="上品なピンクネイル:Luna Veil"
+                  class="gallery-mini__image"
+                >
+              </a>
+            </article>
+
+            <article class="gallery-mini card fade-up delay-7">
+              <a href="images/gallery-07.jpg" class="gallery-mini__link">
+                <img
+                  src="images/gallery-07.jpg"
+                  alt="大人可愛い韓国ネイル:Jelly Heart"
+                  class="gallery-mini__image"
+                >
+              </a>
+            </article>
+          </div>
+
+          <div class="gallery__more center fade-up delay-7">
+            <a href="gallery.html" class="btn">もっと見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal -->
+    <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+      <button
+        class="gallery-modal__close"
+        type="button"
+        aria-label="閉じる"
+      >
+        ×
       </button>
-    </nav>
-
-  </div>
-
-  <div class="header-drawer" id="headerDrawer" aria-hidden="true">
-    <nav class="header-drawer__nav" aria-label="メニュー">
-      <a href="index.html">Top</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="menu.html">Menu</a>
-      <a href="index.html#price">Price</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="index.html#cta">Reserve</a>
-    </nav>
-  </div>
-</header>
-
-
-<main>
-
-<!-- hero -->
-<section class="hero">
-  <div class="hero__bg">
-    <img src="images/hero-nail.jpg" alt="LUNARIAの韓国ネイル" class="hero__bg-image">
-  </div>
-
-  <div class="container hero__overlay">
-    <p class="hero__brand"> ☾ LUNARIA</p>
-   <h1 class="hero__title">
-  ちゅるん、<br><span>ときめく</span>指先。
-</h1>
-    <p class="hero__text">
-      上品で大人可愛い韓国ネイルサロン。<br>
-      透明感のあるデザインで、指先にやさしいときめきを。
-    </p>
-    <a href="#" class="btn hero__btn">LINEで予約する</a>
-  </div>
-</section>
-
-<!-- gallery -->
-<section class="gallery section section-divider">
-  <div class="container">
-
-    <div class="section-head center fade-up">
-      <span class="section-label">Trend Design</span>
-      <h2 class="section-title">Gallery</h2>
-      <p class="section-text">
-        透明感とときめきをまとった、LUNARIAの人気デザイン。
-      </p>
+      <div class="gallery-modal__inner">
+        <img src="" alt="" class="gallery-modal__image">
+      </div>
     </div>
 
-    <div class="gallery__layout">
+    <!-- popular -->
+    <section class="popular section">
+      <div class="container">
+        <div class="section-head center fade-up">
+          <span class="section-label">Selected Design</span>
+          <h2 class="section-title">Popular Design</h2>
+          <p class="section-text">
+            LUNARIAで人気の高い、上品で大人可愛いデザイン。
+          </p>
+        </div>
 
-      <article class="gallery-card gallery-card--feature card fade-up delay-1">
-        <a href="images/gallery-01.jpg" class="gallery-card__link">
-          <img src="images/gallery-01.jpg" alt="ちゅるんピンクの韓国ネイル" class="gallery-card__image">
-          <div class="gallery-card__body">
-            <p class="gallery-card__eyebrow">Featured</p>
-            <h3 class="gallery-card__title">Rosy Melt</h3>
-            <p class="gallery-card__text">
-              透明感を引き出す王道ちゅるんピンク。<br>迷ったらこれ。
-            </p>
-            <p class="gallery-card__price">¥5,000</p>
-          </div>
-        </a>
-      </article>
+        <div class="popular__grid">
+          <article class="popular-card card fade-up delay-1">
+            <a href="images/popular-01.jpg" class="popular-card__link">
+              <div class="popular-card__media">
+                <img
+                  src="images/popular-01.jpg"
+                  alt="ちゅるんピンクネイル"
+                  class="popular-card__image"
+                >
+                <span class="popular-card__number">01</span>
+              </div>
 
-      <div class="gallery__side">
+              <div class="popular-card__body">
+                <p class="popular-card__eyebrow">Most Loved</p>
+                <h3 class="popular-card__title">Rosy Melt</h3>
+                <p class="popular-card__text">
+                  透明感を引き出す、王道ちゅるんピンク。<br>
+                  誰でも可愛くなれる、圧倒的人気No.1。
+                </p>
+                <p class="popular-card__price">¥5,500〜</p>
+              </div>
+            </a>
+          </article>
 
-        <article class="gallery-card card fade-up delay-2">
-          <a href="images/gallery-02.jpg" class="gallery-card__link gallery-card__link--row">
-            <img src="images/gallery-02.jpg" alt="ミラーとハートの韓国ネイル" class="gallery-card__thumb">
-            <div class="gallery-card__body">
-              <p class="gallery-card__eyebrow">Trend</p>
-              <h3 class="gallery-card__title">Moon Mirror Heart</h3>
-              <p class="gallery-card__text">
-                ミラーの輝きとハートで魅せる韓国トレンドネイル。今っぽさを一気に引き上げるデザイン。
-              </p>
-              <p class="gallery-card__price">¥6,500</p>
+          <article class="popular-card card fade-up delay-2">
+            <a href="images/popular-02.jpg" class="popular-card__link">
+              <div class="popular-card__media">
+                <img
+                  src="images/popular-02.jpg"
+                  alt="血色感プラスネイル"
+                  class="popular-card__image"
+                >
+                <span class="popular-card__number">02</span>
+              </div>
+
+              <div class="popular-card__body">
+                <p class="popular-card__eyebrow">Classic Pink</p>
+                <h3 class="popular-card__title">Blush Syrup</h3>
+                <p class="popular-card__text">
+                  自然に血色感をプラス。<br>
+                  派手すぎず、ちゃんと可愛い大人の定番ネイル。
+                </p>
+                <p class="popular-card__price">¥5,500〜</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="popular-card card fade-up delay-3">
+            <a href="images/popular-03.jpg" class="popular-card__link">
+              <div class="popular-card__media">
+                <img
+                  src="images/popular-03.jpg"
+                  alt="クリスタルグロウネイル"
+                  class="popular-card__image"
+                >
+                <span class="popular-card__number">03</span>
+              </div>
+
+              <div class="popular-card__body">
+                <p class="popular-card__eyebrow">Sparkle Mood</p>
+                <h3 class="popular-card__title">Crystal Glow</h3>
+                <p class="popular-card__text">
+                  きらめきで指先に特別感を。<br>
+                  シンプルじゃ物足りない日に選びたいデザイン。
+                </p>
+                <p class="popular-card__price">¥7,500〜</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- concept -->
+    <section class="concept section">
+      <div class="container concept__inner">
+        <span class="section-label">Concept</span>
+        <h2 class="section-title">Concept</h2>
+
+        <p class="concept__catch">
+          透明感で、指先の印象は変わる。
+        </p>
+
+        <p class="concept__text">
+          ちゅるんとした艶とやわらかな色づかいで、<br>
+          大人可愛い韓国ネイルを提案。<br><br>
+          派手すぎないのに、ちゃんと可愛い。<br>
+          毎日が少し嬉しくなる、上品なネイルを。
+        </p>
+      </div>
+    </section>
+
+    <!-- strength -->
+    <section class="strength section">
+      <div class="container">
+        <div class="section-head center fade-up">
+          <span class="section-label">Strength</span>
+          <h2 class="section-title">LUNARIAの強み</h2>
+          <p class="section-text">
+            上品で大人可愛い韓国ネイルを、あなたらしく。
+          </p>
+        </div>
+
+        <div class="strength__grid">
+          <div class="strength-item fade-up delay-1">
+            <div class="strength-circle">
+              <div>
+                <p class="strength-number">01</p>
+                <h3 class="strength-title">韓国トレンドデザイン</h3>
+              </div>
             </div>
-          </a>
-        </article>
+            <p class="strength-text">
+              今っぽさと上品さを両立。<br>
+              “ただ可愛い”で終わらない、大人の韓国ネイル。
+            </p>
+          </div>
 
-        <article class="gallery-card card fade-up delay-3">
-          <a href="images/gallery-03.jpg" class="gallery-card__link gallery-card__link--row gallery-card__link--reverse">
-            <img src="images/gallery-03.jpg" alt="じゅわっと血色感のちゅるんネイル" class="gallery-card__thumb">
-            <div class="gallery-card__body">
-              <p class="gallery-card__eyebrow">Popular</p>
-              <h3 class="gallery-card__title">Blush Syrup</h3>
-              <p class="gallery-card__text">
-じゅわっと血色感。
-ナチュラルなのにちゃんと可愛い、大人のための定番。
-              </p>
-              <p class="gallery-card__price">¥5,200</p>
+          <div class="strength-item fade-up delay-2">
+            <div class="strength-circle">
+              <div>
+                <p class="strength-number">02</p>
+                <h3 class="strength-title">透明感のある仕上がり</h3>
+              </div>
             </div>
-          </a>
-        </article>
+            <p class="strength-text">
+              ちゅるんとした艶で、指先まで美しく。<br>
+              ふとした瞬間に気分が上がる仕上がりへ。
+            </p>
+          </div>
 
-        <article class="gallery-card card fade-up delay-4">
-          <a href="images/gallery-04.jpg" class="gallery-card__link gallery-card__link--row">
-            <img src="images/gallery-04.jpg" alt="透け感グラデーションの韓国ネイル" class="gallery-card__thumb">
-            <div class="gallery-card__body">
-              <p class="gallery-card__eyebrow">Trend</p>
-              <h3 class="gallery-card__title">Starry Drop</h3>
-              <p class="gallery-card__text">
-                透け感とグラデーションで魅せる韓国ネイル。指先をすらっと美しく見せるデザイン。
-              </p>
-              <p class="gallery-card__price">¥5,800</p>
+          <div class="strength-item fade-up delay-3">
+            <div class="strength-circle">
+              <div>
+                <p class="strength-number">03</p>
+                <h3 class="strength-title">丁寧なカウンセリング</h3>
+              </div>
             </div>
-          </a>
-        </article>
-
-      </div>
-
-      <div class="gallery__bottom">
-        <article class="gallery-mini card fade-up delay-5">
-          <a href="images/gallery-05.jpg" class="gallery-mini__link">
-            <img src="images/gallery-05.jpg" alt="シンプルな韓国ネイル" class="gallery-mini__image">
-          </a>
-        </article>
-
-        <article class="gallery-mini card fade-up delay-6">
-          <a href="images/gallery-06.jpg" class="gallery-mini__link">
-            <img src="images/gallery-06.jpg" alt="上品なピンクネイル" class="gallery-mini__image">
-          </a>
-        </article>
-
-        <article class="gallery-mini card fade-up delay-7">
-          <a href="images/gallery-07.jpg" class="gallery-mini__link">
-            <img src="images/gallery-07.jpg" alt="大人可愛い韓国ネイル" class="gallery-mini__image">
-          </a>
-        </article>
-      </div>
-
-      <div class="gallery__more center fade-up delay-7">
-        <a href="gallery.html" class="btn">もっと見る</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- modal -->
-
-<div class="gallery-modal" id="galleryModal" aria-hidden="true">
-  <button class="gallery-modal__close" type="button" aria-label="閉じる">×</button>
-  <div class="gallery-modal__inner">
-    <img src="" alt="" class="gallery-modal__image">
-  </div>
-</div>
-  </div>
-</section>
-
-
-<!-- popular -->
-<section class="popular section">
-  <div class="container">
-
-    <div class="section-head center fade-up">
-      <span class="section-label">Selected Design</span>
-      <h2 class="section-title">Popular Nail</h2>
-      <p class="section-text">
-        LUNARIAで人気の高い、上品で大人可愛いデザイン。
-      </p>
-    </div>
-
-    <div class="popular__grid">
-
-      <article class="popular-card card fade-up delay-1">
-        <a href="images/popular-01.jpg" class="popular-card__link">
-          <div class="popular-card__media">
-            <img src="images/popular-01.jpg" alt="ちゅるんピンクネイル" class="popular-card__image">
-            <span class="popular-card__number">01</span>
-          </div>
-
-          <div class="popular-card__body">
-            <p class="popular-card__eyebrow">Most Loved</p>
-            <h3 class="popular-card__title">Rosy Melt</h3>
-            <p class="popular-card__text">
-              透明感を引き出す、王道ちゅるんピンク。<br>
-              誰でも可愛くなれる、圧倒的人気No.1。
+            <p class="strength-text">
+              “似合う”を一緒に見つける時間。<br>
+              あなたらしさを引き出すデザインをご提案。
             </p>
           </div>
-        </a>
-      </article>
+        </div>
+      </div>
+    </section>
 
-      <article class="popular-card card fade-up delay-2">
-        <a href="images/popular-02.jpg" class="popular-card__link">
-          <div class="popular-card__media">
-            <img src="images/popular-02.jpg" alt="血色感プラスネイル" class="popular-card__image">
-            <span class="popular-card__number">02</span>
-          </div>
+    <!-- price -->
+    <section class="price section" id="price">
+      <div class="container-narrow">
+        <div class="section-head center fade-up">
+          <span class="section-label">Price</span>
+          <h2 class="section-title">Menu & Price</h2>
+          <p class="section-text">
+            わかりやすい料金で、安心してネイルを楽しめます。
+          </p>
+        </div>
 
-          <div class="popular-card__body">
-            <p class="popular-card__eyebrow">Classic Pink</p>
-            <h3 class="popular-card__title">Blush Syrup</h3>
-            <p class="popular-card__text">
-              自然に血色感をプラス。<br>
-              派手すぎず、ちゃんと可愛い大人の定番ネイル。
+        <div class="price__list">
+          <article class="price-item card fade-up delay-1">
+            <div class="price-item__head">
+              <h3 class="price-item__title">ワンカラー / グラデーション</h3>
+              <p class="price-item__value">¥6,500〜</p>
+            </div>
+            <p class="price-item__text">
+              ちゅるんワンカラーやグラデーションなど、
+              ナチュラルで上品な仕上がりに。
             </p>
-          </div>
-        </a>
-      </article>
+          </article>
 
-      <article class="popular-card card fade-up delay-3">
-        <a href="images/popular-03.jpg" class="popular-card__link">
-          <div class="popular-card__media">
-            <img src="images/popular-03.jpg" alt="クリスタルグロウネイル" class="popular-card__image">
-            <span class="popular-card__number">03</span>
-          </div>
-
-          <div class="popular-card__body">
-            <p class="popular-card__eyebrow">Sparkle Mood</p>
-            <h3 class="popular-card__title">Crystal Glow</h3>
-            <p class="popular-card__text">
-              きらめきで指先に特別感を。<br>
-              シンプルじゃ物足りない日に選びたいデザイン。
+          <article class="price-item card fade-up delay-2">
+            <div class="price-item__head">
+              <h3 class="price-item__title">韓国デザインネイル</h3>
+              <p class="price-item__value">¥7,500〜</p>
+            </div>
+            <p class="price-item__text">
+              マグネットや韓国デザインなど、
+              今っぽさを取り入れた人気メニュー。
             </p>
-          </div>
-        </a>
-      </article>
+          </article>
 
-    </div>
-
-  </div>
-</section>
-
-<!-- concept -->
-<section class="concept section">
-  <div class="container concept__inner">
-
-    <h2 class="section-title">
-      <img src="moon.svg" alt="">
-      Concept</h2>
-
-    <p class="concept__catch">
-      透明感で、指先の印象は変わる。
-    </p>
-
-    <p class="concept__text">
-      ちゅるんとした艶とやわらかな色づかいで
-大人可愛い韓国ネイルを提案。<br><br>
-
-派手すぎないのに、ちゃんと可愛い。<br>
-毎日が少し嬉しくなる、上品なネイルを。
-    </p>
-
-
-
-  </div>
-</section>
-
-<!-- strength -->
-<section class="strength section">
-  <div class="container">
-
-    <div class="section-head center fade-up">
-      <span class="section-label">Strength</span>
-      <h2 class="section-title">LUNARIAの強み</h2>
-      <p class="section-text">
-        上品で大人可愛い韓国ネイルを、あなたらしく。
-      </p>
-    </div>
-
-    <div class="strength__grid">
-
-      <div class="strength-item fade-up delay-1">
-        <div class="strength-circle">
-          <div>
-            <p class="strength-number">01</p>
-            <h3 class="strength-title">韓国トレンドデザイン</h3>
-          </div>
+          <article class="price-item card fade-up delay-3">
+            <div class="price-item__head">
+              <h3 class="price-item__title">こだわりデザイン</h3>
+              <p class="price-item__value">¥8,500〜</p>
+            </div>
+            <p class="price-item__text">
+              パーツやアートを取り入れた、
+              こだわりのデザインネイル。
+            </p>
+          </article>
         </div>
-        <p class="strength-text">
-          今っぽさと上品さを両立。<br>
-          “ただ可愛い”で終わらない、大人の韓国ネイル。
+
+        <p class="price-note fade-up delay-3">
+          ※デザインやパーツにより価格が変動します。<br>
+          カウンセリング時にご案内いたします。
         </p>
       </div>
+    </section>
 
-      <div class="strength-item fade-up delay-2">
-        <div class="strength-circle">
-          <div>
-            <p class="strength-number">02</p>
-            <h3 class="strength-title">透明感のある仕上がり</h3>
-          </div>
+    <!-- faq -->
+    <section class="faq section section-divider" id="faq">
+      <div class="container-narrow">
+        <div class="section-head center fade-up">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">よくあるご質問</h2>
+          <p class="section-text">
+            初めての方でも安心してご来店いただけるよう、
+            よくいただくご質問をまとめました。
+          </p>
         </div>
-        <p class="strength-text">
-          ちゅるんとした艶で、指先まで美しく。<br>
-          ふとした瞬間に気分が上がる仕上がりへ。
-        </p>
+
+        <div class="faq__list">
+          <details class="faq-item">
+            <summary>初めてでも大丈夫ですか？</summary>
+            <p>
+              はい、大丈夫です。<br>カウンセリングでお好みやライフスタイルを伺いながら、
+              あなたに合ったデザインをご提案いたします。
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>どのメニューを選べばいいかわかりません。</summary>
+            <p>
+              ご来店後にご相談いただいても大丈夫です。<br>
+              イメージやお悩みに合わせて最適なメニューをご案内いたします。
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>ネイルの持ちはどれくらいですか？</summary>
+            <p>
+              個人差はありますが、約3〜4週間ほどお楽しみいただけます。
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>オフは必要ですか？</summary>
+            <p>
+              付け替えの場合はオフが必要となります。<br>
+              初回や状態によって異なるため、事前にご相談ください。
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>予約はどのようにすればいいですか？</summary>
+            <p>
+              LINEまたはInstagramのDMよりご予約いただけます。<br>
+              空き状況もお気軽にお問い合わせください。
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- review -->
+    <section class="review section">
+      <div class="container-narrow">
+        <div class="section-head center fade-up">
+          <span class="section-label">Review</span>
+          <h2 class="section-title">お客様の声</h2>
+          <p class="section-text">
+            実際にご来店いただいたお客様のリアルな声をご紹介します。
+          </p>
+        </div>
+
+        <div class="review__list">
+          <article class="review-item fade-up delay-1">
+            <p class="review-item__text">
+              想像以上に可愛くて、ずっと爪見てます…♡<br>
+              初めてでも丁寧に相談乗ってくれて安心でした！
+            </p>
+            <span class="review-item__name">20代 / 会社員</span>
+          </article>
+
+          <article class="review-item fade-up delay-2">
+            <p class="review-item__text">
+              ちゅるん感が本当に可愛すぎる…！<br>
+              周りにもめっちゃ褒められました♡
+            </p>
+            <span class="review-item__name">20代 / 学生</span>
+          </article>
+
+          <article class="review-item fade-up delay-3">
+            <p class="review-item__text">
+              派手すぎないのにちゃんと可愛いのが最高です。<br>
+              毎回仕上がりが楽しみで通ってます♡
+            </p>
+            <span class="review-item__name">30代 / OL</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section" id="cta">
+      <div class="container-narrow">
+        <div class="cta-box fade-up">
+          <h2 class="cta-title">
+            どれが似合うか迷った方も、<br>
+            お気軽にご相談ください。
+          </h2>
+
+          <p class="cta-text">
+            LINEから簡単にご予約・ご相談いただけます。<br>
+            空き状況の確認だけでも、お気軽にどうぞ。
+          </p>
+
+          <a href="https://line.me/" class="cta-button">
+            LINEで予約する
+          </a>
+
+          <p class="cta-sub">
+            無理な勧誘は一切ありませんので、ご安心ください。
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container center">
+      <p class="footer-brand">☾ LUNARIA Nail Salon</p>
+
+      <div class="footer-access">
+        <p>大阪・難波エリア / ○○駅 徒歩5分</p>
+        <p>詳細はご予約時にご案内いたします。</p>
       </div>
 
-      <div class="strength-item fade-up delay-3">
-        <div class="strength-circle">
-          <div>
-            <p class="strength-number">03</p>
-            <h3 class="strength-title">丁寧なカウンセリング</h3>
-          </div>
-        </div>
-        <p class="strength-text">
-          “似合う”を一緒に見つける時間。<br>
-          あなたらしさを引き出すデザインをご提案。
-        </p>
+      <div class="footer-links">
+        <a href="about.html">サロンについて</a>
+        <span class="footer-divider">│</span>
+        <a href="policy.html">プライバシーポリシー</a>
       </div>
 
-    </div>
-
-  </div>
-</section>
-
-<!-- price -->
-<section class="price section" id="price">
-  <div class="container-narrow">
-
-    <div class="section-head center fade-up">
-      <span class="section-label">Price</span>
-      <h2 class="section-title">Menu & Price</h2>
-      <p class="section-text">
-        わかりやすい料金で、安心してネイルを楽しめます。
+      <p class="footer-copy">
+        © LUNARIA Nail Salon
       </p>
     </div>
+  </footer>
 
-    <div class="price__list">
-
-      <article class="price-item card fade-up delay-1">
-        <div class="price-item__head">
-          <h3 class="price-item__title">ワンカラー / グラデーション</h3>
-          <p class="price-item__value">¥6,500〜</p>
-        </div>
-        <p class="price-item__text">
-ちゅるんワンカラーやグラデーションなど、
-ナチュラルで上品な仕上がりに。
-        </p>
-      </article>
-
-      <article class="price-item card fade-up delay-2">
-        <div class="price-item__head">
-          <h3 class="price-item__title">韓国デザインネイル</h3>
-          <p class="price-item__value">¥7,500〜</p>
-        </div>
-        <p class="price-item__text">
-マグネットや韓国デザインなど、
-今っぽさを取り入れた人気メニュー。
-        </p>
-      </article>
-
-      <article class="price-item card fade-up delay-3">
-        <div class="price-item__head">
-          <h3 class="price-item__title">こだわりデザイン</h3>
-          <p class="price-item__value">¥8,500〜</p>
-        </div>
-        <p class="price-item__text">
-パーツやアートを取り入れた、
-こだわりのデザインネイル。
-        </p>
-      </article>
-
-    </div>
-
-  </div>
- <p class="price-note fade-up delay-3">
-  ※デザインやパーツにより価格が変動します。<br>
-  カウンセリング時にご案内いたします。
-</p> 
-</section>
-
-
-<!-- faq -->
-<section class="faq section section-divider" id="faq">
-  <div class="container-narrow">
-
-    <div class="section-head center fade-up">
-      <span class="section-label">FAQ</span>
-      <h2 class="section-title">よくあるご質問</h2>
-      <p class="section-text">
-        初めての方でも安心してご来店いただけるよう、
-        よくいただくご質問をまとめました。
-      </p>
-    </div>
-
-    <div class="faq__list">
-
-      <details class="faq-item">
-        <summary>初めてでも大丈夫ですか？</summary>
-        <p>
-          はい、大丈夫です。カウンセリングでお好みやライフスタイルを伺いながら、
-          あなたに合ったデザインをご提案いたします。
-        </p>
-      </details>
-
-      <details class="faq-item">
-        <summary>どのメニューを選べばいいかわかりません。</summary>
-        <p>
-          ご来店後にご相談いただいても大丈夫です。
-          イメージやお悩みに合わせて最適なメニューをご案内いたします。
-        </p>
-      </details>
-
-      <details class="faq-item">
-        <summary>ネイルの持ちはどれくらいですか？</summary>
-        <p>
-          個人差はありますが、約3〜4週間ほどお楽しみいただけます。
-        </p>
-      </details>
-
-      <details class="faq-item">
-        <summary>オフは必要ですか？</summary>
-        <p>
-          付け替えの場合はオフが必要となります。
-          初回や状態によって異なるため、事前にご相談ください。
-        </p>
-      </details>
-
-      <details class="faq-item">
-        <summary>予約はどのようにすればいいですか？</summary>
-        <p>
-          LINEまたはInstagramのDMよりご予約いただけます。
-          空き状況もお気軽にお問い合わせください。
-        </p>
-      </details>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- review -->
-<section class="review section">
-  <div class="container-narrow">
-
-    <div class="section-head center fade-up">
-      <span class="section-label">Review</span>
-      <h2 class="section-title">お客様の声</h2>
-      <p class="section-text">
-        実際にご来店いただいたお客様のリアルな声をご紹介します。
-      </p>
-    </div>
-
-    <div class="review__list">
-
-      <article class="review-item fade-up delay-1">
-        <p class="review-item__text">
-          想像以上に可愛くて、ずっと爪見てます…♡<br>
-          初めてでも丁寧に相談乗ってくれて安心でした！
-        </p>
-        <span class="review-item__name">20代 / 会社員</span>
-      </article>
-
-      <article class="review-item fade-up delay-2">
-        <p class="review-item__text">
-          ちゅるん感が本当に可愛すぎる…！<br>
-          周りにもめっちゃ褒められました♡
-        </p>
-        <span class="review-item__name">20代 / 学生</span>
-      </article>
-
-      <article class="review-item fade-up delay-3">
-        <p class="review-item__text">
-          派手すぎないのにちゃんと可愛いのが最高です。<br>
-          毎回仕上がりが楽しみで通ってます♡
-        </p>
-        <span class="review-item__name">30代 / OL</span>
-      </article>
-
-    </div>
-
-  </div>
-</section>
-<!-- CTA -->
-<section class="cta section" id="cta">
-  <div class="container-narrow">
-
-    <div class="cta-box fade-up">
-
-      <h2 class="cta-title">
-        あなたの“可愛い”を、指先から。
-      </h2>
-
-      <p class="cta-text">
-        LINEから簡単にご予約いただけます。<br>
-        空き状況の確認だけでも、お気軽にどうぞ。
-      </p>
-
-      <a href="#" class="cta-button">
-        LINEで予約する
-      </a>
-      <p class="cta-sub">
-  無理な勧誘は一切ありません。
-</p>
-
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-
-<!-- footer -->
-<footer class="site-footer">
-  <div class="container center">
-
-    <p class="footer-brand">☾ LUNARIA Nail Salon</p>
-
-    <div class="footer-access">
-      <p>大阪・難波エリア / ○○駅 徒歩5分</p>
-      <p>詳細はご予約時にご案内いたします。</p>
-    </div>
-
-<div class="footer-links">
-  <a href="about.html">サロンについて</a>
-  <span class="footer-divider">│</span>
-  <a href="policy.html">プライバシーポリシー</a>
-</div>
-
-    <p class="footer-copy">
-      © LUNARIA Nail Salon
-    </p>
-
-  </div>
-</footer>
-
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

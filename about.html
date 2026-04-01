@@ -2,42 +2,67 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | LUNARIA</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    name="description"
+    content="LUNARIAは、上品で大人可愛い韓国ネイルを提案する完全予約制プライベートサロンです。"
+  >
+  <title>LUNARIA | 韓国ネイルサロン</title>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+  <!-- header -->
   <header class="site-header">
     <div class="container site-header__inner">
-
       <a href="index.html" class="site-logo">
         ☾ LUNARIA
       </a>
 
-      <nav class="site-nav" aria-label="グローバルナビゲーション">
-        <a href="#" class="header__insta" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <div class="site-header__actions">
+        <a
+          href="https://www.instagram.com/"
+          class="header__insta"
+          aria-label="Instagram"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
             <rect x="3" y="3" width="18" height="18" rx="5"></rect>
             <circle cx="12" cy="12" r="4"></circle>
             <circle cx="17" cy="7" r="1.5"></circle>
           </svg>
         </a>
 
-        <a href="#" class="header__reserve">LINE予約</a>
+        <a href="#cta" class="header__reserve">
+          LINE予約
+        </a>
 
-        <button class="header__menu" aria-label="Menu" aria-expanded="false" aria-controls="headerDrawer">
+        <button
+          type="button"
+          class="header__menu"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="headerDrawer"
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
-      </nav>
+      </div>
     </div>
 
     <div class="header-drawer" id="headerDrawer" aria-hidden="true">
       <nav class="header-drawer__nav" aria-label="メニュー">
         <a href="index.html">Top</a>
-        <a href="about.html" class="active">About</a>
         <a href="gallery.html">Gallery</a>
         <a href="menu.html">Menu</a>
         <a href="index.html#price">Price</a>
@@ -125,29 +150,28 @@
   </main>
 
 <!-- footer -->
-<footer class="site-footer">
-  <div class="container center">
+  <footer class="site-footer">
+    <div class="container center">
+      <p class="footer-brand">☾ LUNARIA Nail Salon</p>
 
-    <p class="footer-brand">☾ LUNARIA Nail Salon</p>
+      <div class="footer-access">
+        <p>大阪・難波エリア / ○○駅 徒歩5分</p>
+        <p>詳細はご予約時にご案内いたします。</p>
+      </div>
 
-    <div class="footer-access">
-      <p>大阪・難波エリア / ○○駅 徒歩5分</p>
-      <p>詳細はご予約時にご案内いたします。</p>
+      <div class="footer-links">
+        <a href="about.html">サロンについて</a>
+        <span class="footer-divider">│</span>
+        <a href="policy.html">プライバシーポリシー</a>
+      </div>
+
+      <p class="footer-copy">
+        © LUNARIA Nail Salon
+      </p>
     </div>
-
-<div class="footer-links">
-  <a href="about.html">サロンについて</a>
-  <span class="footer-divider">│</span>
-  <a href="policy.html">プライバシーポリシー</a>
-</div>
-
-    <p class="footer-copy">
-      © LUNARIA Nail Salon
-    </p>
-
-  </div>
-</footer>
+  </footer>
 
   <script src="js/main.js"></script>
+
 </body>
 </html>
