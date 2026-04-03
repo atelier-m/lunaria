@@ -205,8 +205,8 @@ h3{
 .cta-button:hover{
   transform:translateY(-2px) scale(1.03);
   box-shadow:
-    0 14px 28px rgba(231,159,188,0.32),
-    inset 0 2px 6px rgba(255,255,255,0.6);
+    0 18px 40px rgba(231,159,188,0.32),
+    inset 0 2px 6px rgba(255,255,255,0.4);
 }
 
 .card{
@@ -1547,17 +1547,23 @@ h3{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-height:52px;
-  padding:0 24px;
+
+  min-height:56px;
+  padding:0 32px; 
+
   border:1px solid transparent;
   border-radius:999px;
+
   background:linear-gradient(180deg, #f8a9c0 0%, #f58cab 100%);
   color:#fff;
   font-weight:600;
+  font-size:16px;
   letter-spacing:.04em;
+
   box-shadow:
-    0 10px 24px rgba(231,159,188,0.22),
+    0 14px 32px rgba(231,159,188,0.28),
     inset 0 1px 0 rgba(255,255,255,0.4);
+
   transition:transform .25s ease, box-shadow .25s ease;
 }
 
