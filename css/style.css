@@ -1122,6 +1122,12 @@ h3{
     font-size: 14px;
   }
 }
+
+@media (min-width: 1024px){
+  .popular__grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* =========================
    CONCEPT
 ========================= */
