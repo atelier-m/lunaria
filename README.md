@@ -3,10 +3,15 @@
 韓国ネイル × 大人可愛い をテーマにした、
 完全予約制プライベートネイルサロンのLPです。
 
+## 🎯 Purpose
+
+LINE予約の獲得を目的としたLP設計。
+
 ## 🌙 URL
 https://atelier-m.github.io/lunaria/
 
----
+## 🖼 Preview
+![LUNARIA Preview](preview.jpg)
 
 ## ✨ Before → After
 
