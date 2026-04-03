@@ -34,7 +34,7 @@ if (header) {
 ========================= */
 
 const galleryLinks = document.querySelectorAll(
-  '.gallery-card__link, .gallery-mini__link, .popular-card__link'
+  '.gallery-card__link, .gallery-mini__link, .popular-modal__link'
 );
 
 const galleryModal = document.getElementById('galleryModal');
