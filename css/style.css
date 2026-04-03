@@ -424,6 +424,13 @@ h3{
   transform:scale(1.08);
 }
 
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(255,255,255,0.08);
+}
+
 .hero::after{
   content:"";
   position:absolute;
@@ -463,10 +470,10 @@ h3{
 }
 
 .hero__brand{
-  font-size:14px;
+  font-size:1.2em;
   letter-spacing:.32em;
-  color:rgba(255,255,255,0.6);
-  margin-bottom:16px;
+  color:rgba(255,255,255,1);
+  margin-bottom:24px;
   text-transform:uppercase;
   opacity:.9;
 }
@@ -485,18 +492,17 @@ h3{
 }
 
 .hero__title span{
-  background:linear-gradient(
-    180deg,
-    #ff9ec4 0%,
-    #ff69a3 40%,
-    #ffb6d3 100%
-  );
+  background: linear-gradient(
+  180deg,
+  #FADADD 0%,
+  #F6AFC7 100%
+);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   filter:brightness(1.12);
   text-shadow:
-    0 2px 10px rgba(255,120,170,0.25),
-    0 0 20px rgba(255,180,210,0.2);
+  0 2px 6px rgba(255,255,255,0.6),
+  0 6px 16px rgba(231,84,128,0.15);
 }
 
 .hero__subtitle{
@@ -517,6 +523,7 @@ h3{
 .hero__btn{
   margin-top:34px;
   background:#f58cab;
+  box-shadow: 0 12px 30px rgba(231, 84, 128, 0.38);
 }
 
 @media (max-width:900px){
@@ -555,8 +562,128 @@ h3{
 }
 
 /* =========================
+   EMPATHY
+========================= */
+.empathy{
+  position: relative;
+  padding: 72px 20px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 214, 230, 0.45) 0%, rgba(255, 255, 255, 0) 60%),
+    linear-gradient(180deg, #fffafb 0%, #fff 100%);
+  overflow: hidden;
+}
+
+.empathy::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.7) 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.5) 0 2px, transparent 3px),
+    radial-gradient(circle at 30% 80%, rgba(255,255,255,0.6) 0 2px, transparent 3px),
+    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.4) 0 2px, transparent 3px);
+  opacity: 0.6;
+}
+
+.empathy__inner{
+  width: min(100%, 720px);
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.empathy__eyebrow{
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d88aa8;
+}
+
+.empathy__title{
+  text-align: center;
+  margin: 0;
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #5a4a52;
+}
+
+.empathy__list{
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: grid;
+  gap: 18px;
+}
+
+.empathy__list li{
+  padding: 16px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(240, 198, 216, 0.85);
+  box-shadow:
+    0 10px 30px rgba(232, 170, 197, 0.12),
+    inset 0 1px 0 rgba(255,255,255,0.85);
+  color: #6a5b62;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.empathy__message{
+  text-align: center;
+  margin: 50px 0 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #7a6871;
+}
+
+.empathy__message span{
+  color: #e58db2;
+  font-weight: 700;
+}
+
+@media (min-width: 768px){
+  .empathy{
+    padding: 92px 24px;
+  }
+
+  .empathy__list li{
+    font-size: 1rem;
+    padding: 18px 22px;
+  }
+
+  .empathy__message{
+    font-size: 1.05rem;
+  }
+}
+
+.logo-mark{
+  margin-right: 8px;
+}
+
+/* =========================
    TOP GALLERY
 ========================= */
+.gallery-lead{
+  margin: 20px 0 20px;
+  text-align: center;
+  font-size: 0.98rem;
+  line-height: 1.9;
+  color: #7a6871;
+}
+
+.gallery-lead span{
+  color: #e58db2;
+  font-weight: 600;
+}
+
+
 .gallery .section-head{
   margin-bottom:48px;
 }
@@ -579,7 +706,6 @@ h3{
     box-shadow .25s ease;
 }
 
-/* うっすら表面のツヤだけ */
 .gallery-card::before,
 .gallery-mini::before{
   content:"";
@@ -691,7 +817,7 @@ h3{
 }
 
 .gallery-card__eyebrow{
-  margin-bottom:12px;
+  margin-bottom:6px;
   font-size:11px;
   letter-spacing:.16em;
   text-transform:uppercase;
@@ -703,11 +829,11 @@ h3{
   font-size:clamp(18px, 2.2vw, 26px);
   line-height:1.2;
   color:var(--text);
-  font-weight:700;
+  font-weight:600;
 }
 
 .gallery-card__text{
-  margin-top:12px;
+  margin-top:14px;
   color:var(--text-soft);
   line-height:1.75;
   font-size:14px;
@@ -736,7 +862,6 @@ h3{
   border-radius:20px;
 }
 
-/* こっちは hover 時だけ流れる光 */
 .gallery__bottom .gallery-mini::after{
   content:"";
   position:absolute;
