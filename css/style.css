@@ -203,7 +203,7 @@ h3{
 .header__reserve:hover,
 .hero__btn:hover,
 .cta-button:hover{
-  transform:translateY(-2px) scale(1.02);
+  transform:translateY(-2px) scale(1.03);
   box-shadow:
     0 14px 28px rgba(231,159,188,0.32),
     inset 0 2px 6px rgba(255,255,255,0.6);
@@ -499,6 +499,13 @@ h3{
     0 0 20px rgba(255,180,210,0.2);
 }
 
+.hero__subtitle{
+  margin-top: 14px;
+  font-size: 18px;
+  letter-spacing: .08em;
+  color: rgba(255,255,255,0.85);
+}
+
 .hero__text{
   margin-top:18px;
   font-size:17px;
@@ -550,7 +557,6 @@ h3{
 /* =========================
    TOP GALLERY
 ========================= */
-
 .gallery .section-head{
   margin-bottom:48px;
 }
@@ -563,28 +569,37 @@ h3{
 
 .gallery-card,
 .gallery-mini{
+  position:relative;
   overflow:hidden;
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 18px 40px rgba(0,0,0,0.08);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+/* うっすら表面のツヤだけ */
+.gallery-card::before,
+.gallery-mini::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
   background:linear-gradient(
-    180deg,
-    rgba(255,255,255,0.95),
-    rgba(255,255,255,0.78)
+    120deg,
+    rgba(255,255,255,0.18) 0%,
+    rgba(255,255,255,0.06) 18%,
+    rgba(255,255,255,0.00) 40%
   );
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
-  border:1px solid rgba(231,159,188,0.10);
-  box-shadow:0 10px 26px rgba(28,18,23,0.05);
-  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  opacity:.8;
 }
 
 .gallery-card:hover,
 .gallery-mini:hover{
   transform:translateY(-4px);
   box-shadow:0 16px 34px rgba(28,18,23,0.08);
-  border-color:rgba(231,159,188,0.16);
-}
-
-.gallery-card{
-  border-radius:20px;
 }
 
 .gallery-card__link,
@@ -723,19 +738,21 @@ h3{
   border-radius:20px;
 }
 
+/* こっちは hover 時だけ流れる光 */
 .gallery__bottom .gallery-mini::after{
   content:"";
   position:absolute;
   inset:0;
+  z-index:3;
+  pointer-events:none;
   background:linear-gradient(
     120deg,
     rgba(255,255,255,0) 40%,
-    rgba(255,255,255,0.28) 50%,
+    rgba(255,255,255,0.22) 50%,
     rgba(255,255,255,0) 60%
   );
   opacity:0;
   transition:opacity .4s ease;
-  pointer-events:none;
 }
 
 .gallery__bottom .gallery-mini:hover::after{
@@ -748,7 +765,7 @@ h3{
 }
 
 .gallery__more .btn{
-  min-width: 180px;
+  min-width:180px;
 }
 
 @media (max-width:1024px){
@@ -949,93 +966,160 @@ h3{
 ========================= */
 
 .popular__grid{
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+  justify-items: center;
 }
 
-.popular-card{
-  overflow:hidden;
-  background:rgba(255,255,255,0.88);
-  backdrop-filter:blur(8px);
-  -webkit-backdrop-filter:blur(8px);
-  transition:transform .3s ease, box-shadow .3s ease;
+.popular-item{
+  position: relative;
+  width: min(100%, 340px);
+  padding: 26px 110px 24px 24px;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow:
+  0 12px 26px rgba(43,33,38,0.05),
+  0 4px 10px rgba(231,159,188,0.05);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
-.popular-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 14px 30px rgba(43,33,38,0.08);
+.popular-item:first-child{
+  transform: scale(1.05);
+  z-index: 3;
+  padding-right: 138px;
+  box-shadow:
+    0 22px 50px rgba(43,33,38,0.12),
+    0 6px 18px rgba(231,159,188,0.12);
 }
 
-.popular-card__link{
-  display:block;
+.popular-item:first-child .popular-item__photo{
+  transform: scale(1.05);
 }
 
-.popular-card__media{
-  position:relative;
-  overflow:hidden;
+.popular-item__link{
+  display: block;
+  color: inherit;
 }
 
-.popular-card__image{
-  width:100%;
-  aspect-ratio:4 / 5;
-  object-fit:cover;
-  transition:transform .35s ease;
+/* 画像 */
+.popular-item__photo{
+  position: absolute;
+  top: -10px;
+  right: -6px;
+  z-index: 2;
+  width: 142px;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.14);
+  transition: transform .3s ease, box-shadow .3s ease;
+  display: block;
 }
 
-.popular-card:hover .popular-card__image{
-  transform:scale(1.03);
+.popular-item__image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.popular-card__number{
-  position:absolute;
-  top:16px;
-  left:16px;
-  color:var(--text);
-  font-size:14px;
-  font-weight:600;
-  letter-spacing:.08em;
-  backdrop-filter:blur(6px);
+/* 中身 */
+.popular-item__card{
+  position: static;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  min-height: 0;
+  width: auto;
 }
 
-.popular-card__body{
-  padding:22px 20px 24px;
+.popular-item__number{
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: rgba(231,159,188,0.9);
+  line-height: 1;
 }
 
-.popular-card__eyebrow{
-  font-size:11px;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--pink-deep);
+.popular-item__eyebrow{
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--pink-deep);
+  opacity: .7;
 }
 
-.popular-card__title{
-  margin-top:10px;
-  font-size:24px;
-  color:var(--text);
+.popular-item__title{
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 1.12;
+  color: var(--text);
 }
 
-.popular-card__text{
-  margin-top:10px;
-  font-size:14px;
-  line-height:1.8;
-  color:var(--text-soft);
+.popular-item__text{
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text-soft);
 }
 
-.popular-card__price{
-  margin-top:12px;
-  font-size:15px;
-  font-weight:600;
-  color:#e79fbc;
-  letter-spacing:.08em;
+.popular-item__price{
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e79fbc;
+  letter-spacing: .08em;
 }
 
-@media (max-width:900px){
+/* hover */
+.popular-item:hover{
+  transform: translateY(-4px);
+  box-shadow:
+    0 18px 36px rgba(43,33,38,0.08),
+    0 6px 16px rgba(231,159,188,0.08);
+}
+
+.popular-item:hover .popular-item__photo{
+  transform: translateY(-4px);
+  box-shadow:
+    0 18px 34px rgba(0,0,0,0.18);
+}
+
+/* =========================
+   TABLET / PC
+========================= */
+
+@media (min-width: 768px){
   .popular__grid{
-    grid-template-columns:1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: start;
+  }
+
+  .popular-item{
+    width: 100%;
+    max-width: 360px;
+    padding: 28px 116px 26px 26px;
+  }
+
+  .popular-item__photo{
+    top: -16px;
+    right: -10px;
+    width: 148px;
+    border-radius: 22px;
+  }
+
+  .popular-item__title{
+    font-size: 26px;
+  }
+
+  .popular-item__text{
+    font-size: 14px;
   }
 }
-
 /* =========================
    CONCEPT
 ========================= */
