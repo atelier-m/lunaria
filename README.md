@@ -1,56 +1,27 @@
-# LUNARIA Nail Salon
-
-韓国ネイル × 大人可愛い をテーマにした、
-完全予約制プライベートネイルサロンのLPです。
+# LUNARIA Nail Salon LP
 
 ## 🎯 Purpose
+LINE予約の獲得を目的としたLP設計
 
-LINE予約の獲得を目的としたLP設計。
+## 👩‍🦰 Target
+・20代〜30代女性
+・韓国ネイルが好き
+・上品で大人可愛いデザインを求める層
 
-## 🌙 URL
-https://atelier-m.github.io/lunaria/
+## 💡 Design Concept
+透明感 × 大人可愛い × 韓国ネイル
+
+## 🛠 Skills
+HTML / CSS / UIUX設計 / コピー設計
+
+## 🔥 Point
+・CTA導線の最適化（空き状況確認）
+・心理ハードルを下げる相談導線
+・不安を潰すレビューとコピー設計
+
+## 🔄 Before / After
+[Beforeを見る](リンク)
+[Afterを見る](リンク)
 
 ## 🖼 Preview
-![LUNARIA Preview](preview.jpg)
-
-## ✨ Before → After
-
-### Before
-- レイアウトが単調
-- 余白・導線が弱い
-- 世界観が不明確
-
-👉 [Beforeを見る](https://atelier-m.github.io/lunaria/before.html)
-
-### After
-- 「透明感 × 大人可愛い」の世界観を統一
-- Gallery / Popular の役割を明確化
-- CTA導線を設計し、予約まで自然に誘導
-
-👉 [Afterを見る](https://atelier-m.github.io/lunaria/)
----
-
-## 📂 Files
-
-- index.html（After）
-- before.html（Before）
-- css/style.css（After）
-- css/before.css（Before）
-
----
-
-## 💡 Features
-
-- Hero / Gallery / Popular / Price / FAQ / Review / CTA構成
-- スマホファースト設計
-- LINE予約導線あり
-- グラデーション・ガラス感を活かしたUI
-
----
-
-## 🛠 Tools
-
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages
+![preview](preview.jpg)
