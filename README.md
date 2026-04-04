@@ -20,8 +20,8 @@ HTML / CSS / UIUX設計 / コピー設計
 ・不安を潰すレビューとコピー設計
 
 ## 🔄 Before / After
-[Beforeを見る](リンク)
-[Afterを見る](リンク)
+[Beforeを見る](https://atelier-m.github.io/lunaria/before.html)
+[Afterを見る](https://atelier-m.github.io/lunaria/)
 
 ## 🖼 Preview
 ![preview](preview.jpg)
