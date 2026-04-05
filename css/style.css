@@ -520,6 +520,13 @@ h3{
   text-shadow:0 2px 12px rgba(0,0,0,.12);
 }
 
+.hero__cta-sub{
+  font-size:12px;
+  margin-top:10px;
+  color:rgba(255,255,255,0.9);
+  text-shadow:0 2px 12px rgba(0,0,0,.12);
+}
+
 .hero__btn{
   margin-top:34px;
   background:#f58cab;
@@ -1222,6 +1229,15 @@ h3{
 
 .popular__btn{
   display: inline-flex;
+}
+
+.popular-note{
+  margin-top:20px;
+  text-align:center;
+  font-size:12px;
+  line-height:1.9;
+  color:var(--text-soft);
+  opacity:.78;
 }
 
 /* =========================

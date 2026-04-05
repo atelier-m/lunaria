@@ -965,6 +965,112 @@ h3{
 }
 
 /* =========================
+   EMPATHY
+========================= */
+.empathy{
+  position: relative;
+  padding: 72px 20px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 214, 230, 0.45) 0%, rgba(255, 255, 255, 0) 60%),
+    linear-gradient(180deg, #fffafb 0%, #fff 100%);
+  overflow: hidden;
+}
+
+.empathy::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.7) 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.5) 0 2px, transparent 3px),
+    radial-gradient(circle at 30% 80%, rgba(255,255,255,0.6) 0 2px, transparent 3px),
+    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.4) 0 2px, transparent 3px);
+  opacity: 0.6;
+}
+
+.empathy__inner{
+  width: min(100%, 720px);
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.empathy__eyebrow{
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d88aa8;
+}
+
+.empathy__title{
+  text-align: center;
+  margin: 0;
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #5a4a52;
+}
+
+.empathy__list{
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: grid;
+  gap: 18px;
+}
+
+.empathy__list li{
+  padding: 16px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(240, 198, 216, 0.85);
+  box-shadow:
+    0 10px 30px rgba(232, 170, 197, 0.12),
+    inset 0 1px 0 rgba(255,255,255,0.85);
+  color: #6a5b62;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.empathy__message{
+  text-align: center;
+  margin: 50px 0 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #7a6871;
+}
+
+.empathy__message span{
+  color: #e58db2;
+  font-weight: 700;
+}
+
+@media (min-width: 768px){
+  .empathy{
+    padding: 92px 24px;
+  }
+
+  .empathy__list li{
+    font-size: 1rem;
+    padding: 18px 22px;
+  }
+
+  .empathy__message{
+    font-size: 1.05rem;
+  }
+}
+
+.logo-mark{
+  margin-right: 8px;
+}
+
+/* =========================
    TOP GALLERY
 ========================= */
 .gallery .section-head{
